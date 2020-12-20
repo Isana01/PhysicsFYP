@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch3Data1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pendulum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch3Data1playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false"  />
+
+            <ImageButton
+                android:id="@+id/ch3Data1pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible"  />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch3Data1DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="  A simple pendulum measures acceleration due to gravity.it has a small-diameter bob and a string that has a very small mass. The linear displacement from equilibrium is s, the length of the arc. Also shown are the forces on the bob, which result in a net force of −mg sinθ toward the equilibrium position—that is, a restoring force.Time period of a simple pendulum depends upon the gravity constant and the length of the string irrelavent of the mass of the bob.
+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pendi" />
+
+        <include layout="@layout/fragment_layout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Time period of a pendulum depends upon the length and gravity, you may alter the parameters to check how it affects the time period."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gravity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gravity" />
+
+            <SeekBar
+                android:id="@+id/gravitySeekbar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="20" />
+
+            <TextView
+                android:id="@+id/gravityView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="low" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Length" />
+
+            <SeekBar
+                android:id="@+id/lengthSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="20" />
+
+            <TextView
+                android:id="@+id/lengthView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="low" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

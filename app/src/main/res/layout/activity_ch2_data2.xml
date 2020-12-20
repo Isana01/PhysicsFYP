@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch2Data2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Steering Behaviour: Flow Field"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch2Data2playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false"  />
+
+            <ImageButton
+                android:id="@+id/ch2Data2pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch2Data2DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text=" Steering behavior provides a useful tool for directing the motion of characters based on their position within an environment.It predicts the robots future location.In each cell of the grid lives an arrow pointing in some direction—you know, a vector. As a robot moves around the screen, it asks, “Hey, what arrow is beneath me? That’s my desired velocity!”"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/field" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In flow field following behavior the character steers to align its motion with the local tangent of a flow field "
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By clicking upon the field, it will change and will become a new one. You may analyze how the character align its motion with the field."
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            />
+
+        <include layout="@layout/fragment_layout" />
+    </LinearLayout>
+
+</ScrollView>

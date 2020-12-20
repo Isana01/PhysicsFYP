@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch1Data2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Drag Force"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch1Data2playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false"/>
+
+            <ImageButton
+                android:id="@+id/ch1Data2pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_marginRight="20sp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch1Data2DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Friction also occurs when a body passes through a liquid or gas.It is the resistance force caused by the motion of a body through a fluid. While the result is ultimately the same as our previous friction examples (the object slows down)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/drag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginTop="16dp"
+            android:text="You’ll also notice that the smaller objects slow down a great deal more than the larger objects. Remember Newton’s second law? A = F / M. Acceleration equals force divided by mass. A massive object will accelerate less. A smaller object will accelerate more. In this case, the acceleration we’re talking about is the “slowing down” due to drag. The smaller objects will slow down at a greater rate than the larger ones."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            />
+
+
+
+
+
+        <include layout="@layout/fragment_layout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginTop="16dp"
+            android:text="Tap to reset"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch2Data4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="What is Physics?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch2Data4playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false"  />
+
+            <ImageButton
+                android:id="@+id/ch2Data4pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch2Data4DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="the branch of science concerned with the nature and properties of matter and energy. The subject matter of physics includes mechanics, heat, light and other radiation, sound, electricity, magnetism, and the structure of atoms.
+Diffusion is the net movement of anything from a region of higher concentration to a region of lower concentration. Diffusion is driven by a gradient in concentration. The concept of diffusion is widely used in many fields, including physics, chemistry, biology, sociology, economics, and finance. Diffusion is the net movement of anything from a region of higher concentration to a region of lower concentration."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/physics" />
+
+        <include layout="@layout/fragment_layout" />
+    </LinearLayout>
+
+</ScrollView>

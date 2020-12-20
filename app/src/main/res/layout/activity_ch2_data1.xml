@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch2Data1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Steering behaviour: Arrive"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch2Data1playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false" />
+
+            <ImageButton
+                android:id="@+id/ch2Data1pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch2Data1DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text=" Steering behaviors aim to help autonomous characters move in a realistic manner, by using simple forces that are combined to produce life-like, improvisational navigation around the objects' environment.The object is asked to reach a target and it finds the way by using it's intelligence and reaches the target."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrive" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+
+            android:text="The object moves with the desired velocity to reach the target as soon as possible. You may get the concept by changing the position of the target and see how the moving object reaches the target. "/>
+
+         <include layout="@layout/fragment_layout" />
+
+    </LinearLayout>
+
+</ScrollView>

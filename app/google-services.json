@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1051036210306",
+    "firebase_url": "https://physicsbook-a2bb3.firebaseio.com",
+    "project_id": "physicsbook-a2bb3",
+    "storage_bucket": "physicsbook-a2bb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051036210306:android:8621bbed2d5a339fc3909b",
+        "android_client_info": {
+          "package_name": "com.sana.physicsbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051036210306-reb63b324vo9s642p9hqos0t1n5olbbs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sana.physicsbook",
+            "certificate_hash": "d1406cd7ee7920ac72ad81aa2425a5502f47b56f"
+          }
+        },
+        {
+          "client_id": "1051036210306-oe60994g4uk78mnvqslqi1fk8ktjbj6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sana.physicsbook",
+            "certificate_hash": "17b86214b8f41c4af137c733a18b6d30c4ffad24"
+          }
+        },
+        {
+          "client_id": "1051036210306-bc73fmiidkluoocp0i3is22kn8jn7srs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnmKCYyc44slkhMzejuBn-dRktuVB0RT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051036210306-bc73fmiidkluoocp0i3is22kn8jn7srs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

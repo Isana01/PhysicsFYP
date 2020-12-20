@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simulation_frame"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="200dp">
+
+</FrameLayout>

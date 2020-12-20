@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch4Data1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="An Atom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch4Data1playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false" />
+
+            <ImageButton
+                android:id="@+id/ch4Data1pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch4Data1DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Atom, smallest unit into which matter can be divided without the release of electrically charged particles.Most of the atom is empty space. The rest consists of a positively charged nucleus of protons and neutrons surrounded by a cloud of negatively charged electrons. The nucleus is small and dense compared with the electrons, which are the lightest charged particles in nature. Electrons are attracted to any positive charge by their electric force; in an atom, electric forces bind the electrons to the nucleus."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ARatom"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/loginbtn"
+            android:fontFamily="cursive"
+            android:text="View AR"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

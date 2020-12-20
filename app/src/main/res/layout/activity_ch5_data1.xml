@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch5Data1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Coronal Mass Ejection of an Activated Star"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch5Data1playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false" />
+
+            <ImageButton
+                android:id="@+id/ch5Data1pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch5Data1DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="A coronal mass ejection (CME) is a significant release of plasma and accompanying magnetic field from the solar corona.CMEs most often originate from active regions on the Sun's surface, such as groupings of sunspots associated with frequent flares.A new study using the Chandra X-ray Observatory detected a CME from a star other than our own for the first time, providing a novel insight into these powerful phenomena.This 'ExtraSolar' CME was seen emanating from a star called HR 9024, which is located about 450 light years from Earth. This represents the first time that researchers have thoroughly identified and characterized a CME from a star other than our Sun."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ARstar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/loginbtn"
+            android:fontFamily="cursive"
+            android:text="View AR"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ch3Data3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Projectile Motion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ch3Data3playBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_play_circle_filled_24"
+                android:saveEnabled="false"  />
+
+            <ImageButton
+                android:id="@+id/ch3Data3pauseBtnId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="invisible"  />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ch3Data3DetailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:text="Projectile motion is a form of motion experienced by an object or particle that is projected near the Earth's surface and moves along a curved path under the action of gravity only.This curved path was shown by Galileo to be a parabola, but may also be a line in the special case when it is thrown directly upwards.In projecile motion we learn that how the height affects the range of the projectile and what affects does the initial velocity has on the time of flight and how they are inter related to each other. "
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/projectile" />
+
+        <include layout="@layout/fragment_layout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Identify the properties of a projectile, such as acceleration due to gravity, range, maximum height, and trajectory.."
+
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acceleration due to gravity" />
+
+                <SeekBar
+                    android:id="@+id/VelocitySeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="20" />
+
+                <TextView
+                    android:id="@+id/VelocityView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="low" />
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Left" />
+
+            <Button
+                android:id="@+id/right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Right" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

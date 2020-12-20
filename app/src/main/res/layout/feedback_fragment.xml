@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gif" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Physics Is Fun"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/subjectId"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_baseline_subject_24"
+        android:drawablePadding="10dp"
+        android:hint="Subject"
+        android:inputType="textEmailSubject" />
+
+    <EditText
+        android:id="@+id/messageId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:drawablePadding="10dp"
+        android:hint="Message"
+        android:inputType="textMultiLine" />
+
+
+    <Button
+        android:id="@+id/sendFeedbackBtnId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginbtn"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+</LinearLayout>
